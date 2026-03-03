@@ -1,11 +1,22 @@
 from fastapi import FastAPI, UploadFile, File, Header, HTTPException, Depends
+from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional
 import os
 from pydantic import BaseModel
 from datetime import date
 import uuid
+from .extraction_service import extraction_service
 
 app = FastAPI(title="Data Analytics Sénior API")
+
+# --- CORS Configuration ---
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # --- Schemas ---
 

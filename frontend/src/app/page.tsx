@@ -1,4 +1,5 @@
 import React from 'react';
+import FileUpload from '../components/FileUpload';
 
 export default function Home() {
   return (
@@ -32,9 +33,7 @@ export default function Home() {
             <button className="bg-white/5 border border-white/10 px-5 py-2.5 rounded-xl hover:bg-white/10 transition-all flex items-center gap-2">
               <span>Exportar Reporte</span>
             </button>
-            <button className="bg-purple-600 px-5 py-2.5 rounded-xl font-bold hover:bg-purple-500 transition-all shadow-lg shadow-purple-500/20 flex items-center gap-2">
-              <span>+ Subir Factura</span>
-            </button>
+            <FileUpload />
           </div>
         </div>
 
