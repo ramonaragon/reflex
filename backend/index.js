@@ -29,12 +29,9 @@ if (!fs.existsSync('./data/')) {
     fs.mkdirSync('./data/');
 }
 
-// Mock In-Memory Database
-let invoices = [
-    { id: uuidv4(), tenant_id: 'ac93a157-9394-4b01-9a5e-c77619d3b19c', vendor_name: 'Amazon Web Services', invoice_date: '2026-03-02', total_amount: 450.00, currency: 'EUR', status: 'processed', synced: true },
-    { id: uuidv4(), tenant_id: 'ac93a157-9394-4b01-9a5e-c77619d3b19c', vendor_name: 'Google Workspace', invoice_date: '2026-03-01', total_amount: 89.50, currency: 'EUR', status: 'processed', synced: true },
-    { id: uuidv4(), tenant_id: 'ac93a157-9394-4b01-9a5e-c77619d3b19c', vendor_name: 'Apple Ireland', invoice_date: '2026-02-27', total_amount: 1299.00, currency: 'EUR', status: 'processed', synced: false },
-];
+// Mock In-Memory Database — starts empty (zero)
+let invoices = [];
+
 
 let tenants = {
     'ac93a157-9394-4b01-9a5e-c77619d3b19c': { name: 'Empresa Demo', plan: 'Pro' }
