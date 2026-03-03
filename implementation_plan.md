@@ -6,7 +6,7 @@ Este documento detalla la hoja de ruta para transformar el prototipo local en un
 
 ### Stack Tecnológico
 - **Frontend**: Next.js (React) + Tailwind CSS + Lucid React (Iconos) + Recharts (Gráficos).
-- **Backend (API)**: FastAPI (Python) - Ideal para procesamiento de datos e IA.
+- **Backend (API)**: Node.js (Express) - Elegido por su rapidez de desarrollo y facilidad de integración con el ecosistema frontend.
 - **Base de Datos**: PostgreSQL con **Row-Level Security (RLS)** para Multitenancy.
 - **Autenticación**: Proporcionada por Supabase Auth para gestión de empresas y roles.
 - **Procesamiento Asíncrono**: Servicios en segundo plano para OCR y extracción con LLM.
