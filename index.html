@@ -344,6 +344,76 @@
             </div>
         </section>
 
+        <!-- ====== STORYTELLING EN 2 CAPAS ====== -->
+        <section class="storytelling-section scroll-reveal" id="storytelling">
+            <div class="section-label">Storytelling Inteligente · 2 Capas</div>
+            <h2 class="storytelling-title">El mismo dato,<br><span class="line2">tres narrativas distintas.</span></h2>
+            <p class="storytelling-sub">Selecciona tu audiencia y DataSocio adapta automáticamente el lenguaje, el formato y el nivel de profundidad del análisis.</p>
+
+            <!-- Layer Selector -->
+            <div class="layer-tabs">
+                <button class="layer-tab active" data-layer="ceo" id="tab-ceo">
+                    <span class="layer-icon">👔</span>
+                    <span class="layer-tab-label">CEO / Directivo</span>
+                    <span class="layer-tag">Ejecutivo</span>
+                </button>
+                <button class="layer-tab" data-layer="manager" id="tab-manager">
+                    <span class="layer-icon">📊</span>
+                    <span class="layer-tab-label">Manager / Analista</span>
+                    <span class="layer-tag">Táctico</span>
+                </button>
+                <button class="layer-tab" data-layer="scientist" id="tab-scientist">
+                    <span class="layer-icon">🔬</span>
+                    <span class="layer-tab-label">Data Scientist</span>
+                    <span class="layer-tag">Técnico</span>
+                </button>
+            </div>
+
+            <!-- Layer Content -->
+            <div class="layer-content-area">
+
+                <!-- CEO Layer -->
+                <div class="layer-panel active" id="layer-ceo">
+                    <div class="layer-header">
+                        <div class="layer-label-badge ceo-badge">👔 Capa Ejecutiva — CEO</div>
+                        <div class="layer-meta">Enfoque: impacto en negocio · Sin jerga técnica · 30 segundos de lectura</div>
+                    </div>
+                    <div class="story-narrative ceo-narrative">
+                        <div class="narrative-kpi-row" id="ceo-kpis"></div>
+                        <div class="narrative-text" id="ceo-text"></div>
+                        <div class="narrative-action" id="ceo-action"></div>
+                    </div>
+                </div>
+
+                <!-- Manager Layer -->
+                <div class="layer-panel" id="layer-manager">
+                    <div class="layer-header">
+                        <div class="layer-label-badge manager-badge">📊 Capa Táctica — Manager</div>
+                        <div class="layer-meta">Enfoque: tendencias y acciones operativas · Contexto completo · 2 min</div>
+                    </div>
+                    <div class="story-narrative manager-narrative">
+                        <div class="narrative-charts-row" id="manager-charts"></div>
+                        <div class="narrative-text" id="manager-text"></div>
+                        <div class="manager-segments" id="manager-segments"></div>
+                    </div>
+                </div>
+
+                <!-- Scientist Layer -->
+                <div class="layer-panel" id="layer-scientist">
+                    <div class="layer-header">
+                        <div class="layer-label-badge scientist-badge">🔬 Capa Técnica — Data Scientist</div>
+                        <div class="layer-meta">Enfoque: correlaciones, código y metodología estadística</div>
+                    </div>
+                    <div class="story-narrative scientist-narrative">
+                        <div class="scientist-code-block" id="scientist-code"></div>
+                        <div class="narrative-text" id="scientist-text"></div>
+                        <div class="scientist-stats" id="scientist-stats"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -372,7 +442,7 @@
                 <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
             </svg>
         </div>
-        <span class="chatbot-label">Demo AI</span>
+        <span class="chatbot-label">Profesor IA</span>
     </div>
 
     <div id="chatbot-container" class="chatbot-window">
